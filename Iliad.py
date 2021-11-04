@@ -4,8 +4,7 @@ import numpy as np
 from sklearn.metrics import cohen_kappa_score as kappa
 from itertools import combinations as com
 
-path= r'C:\Users\Lampros\A1\HW2'
-files = os.listdir(path) # Get the files from the path
+files = os.listdir() # Get the files from the path
 filenames = [f for f in files if f[-4:] == 'xlsx'] # Choose only excel files.
 print(filenames)
 os.chdir(path) # Change Directory so that it can read the excel files.
